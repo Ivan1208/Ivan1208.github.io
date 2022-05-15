@@ -14,7 +14,11 @@ tags:
 ---
 Hola buenas , en este post vamos a ver una herramienta escrita en python la cual nos va a servir para identificar los usuarios conectados a una red
 introduciendo la gateway de dicha red , este escaner nos mostrara las ip conectadas junto con la MAC del dispositivo correspondiente.
-´´´
+''''
+   
+
+
+
     import scapy.all as scapy
     import subprocess
     #functions
@@ -35,5 +39,5 @@ introduciendo la gateway de dicha red , este escaner nos mostrara las ip conecta
           #guardar valores psrc y hwsrc en un diccionario.
           ip_for_scan = input("[+]Enter your gateway address -->")
       scan(ip_for_scan+"/24")
-´´´
+'''
 la herramienta la podeis encontrar en mi github -> "http://github.com/Ivan1208"
