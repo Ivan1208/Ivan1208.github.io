@@ -10,14 +10,7 @@ header:
 Muy buenas , esta es una herramienta la cual genera contraseñas a traves de diccionrarios aleatorios , esta herramienta puede servir para hacer ataques de fuerza bruta a algun usuario
 
 ```
-    import os
-    def credentials():
-       print("                                                        THIS PROGGRAM WAS MADE BY Ivan1208            ")
-       print("                                                           MY DISCORD ID : iguana#7734")
-       def menu():
-       os.system("cls")
-       print("                                                           THIS IS A PASSWORD GENERTOR               ")
-       credentials()
+    
 
 
 
