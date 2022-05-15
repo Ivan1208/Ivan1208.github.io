@@ -4,7 +4,14 @@ title: Generador de contraseñas escrito en python
 date: 2022-05-15
 classes: wide
 header:
-  teaser: #/assets/images/slae32.png 
+  teaser: #/assets/images/slae32.png
+categories:
+  -python
+  -herramientas
+  -redes
+tags:
+  -python3
+     
 ---
 
 Muy buenas , esta es una herramienta la cual genera contraseñas a traves de diccionrarios aleatorios , esta herramienta puede servir para hacer ataques de fuerza bruta a algun usuario
