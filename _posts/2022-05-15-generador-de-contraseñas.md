@@ -8,7 +8,7 @@ header:
 categories:
   -python
   -herramientas
-  -redes
+  
 tags:
   -python3
      
