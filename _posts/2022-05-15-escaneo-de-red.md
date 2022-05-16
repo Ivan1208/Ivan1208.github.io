@@ -4,7 +4,7 @@ title: Escaneo de red con scapy (python)
 date: 2022-05-15
 classes: wide
 header:
-  teaser: #/assets/images/slae32.png
+  teaser: /assets/images/redes.jpeg
 categories:
   -python
   -herramientas
