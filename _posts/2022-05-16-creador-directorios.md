@@ -4,7 +4,7 @@ title: Creador de directorios de trabajo "htb" con bash
 date: 2022-05-15
 classes: wide
 header:
-  teaser: /assets/images/hacker-directorios.jpeg
+   teaser: /assets/images/hacker-directorios.jpeg
 categories:
   -bash
   -herramientas

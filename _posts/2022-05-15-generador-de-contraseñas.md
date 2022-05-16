@@ -4,7 +4,7 @@ title: Generador de contraseñas escrito en python
 date: 2022-05-15
 classes: wide
 header:
-  teaser: /assets/images/generador_de-contraseñas.jpeg
+   teaser: /assets/images/generador_de-contraseñas.jpeg
 categories:
   -python
   -herramientas
